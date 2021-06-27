@@ -5,28 +5,38 @@
 
 <html>
 <head>
+    <br></br>
     <meta charset="utf-8" />
     <title>Gamedev Canvas Workshop</title>
     <style>
     	* { padding: 0; margin: 0; }
     	canvas { background: #eee; display: block; margin: 0 auto; }
+        .button{
+            width: 150px;
+            height: 50px
+        }
     </style>
 </head>
 <body>
 
-    <button onclick="goHome()">
-        RETURN HOME 
-    </button>
 
 <canvas id="myCanvas" width="580" height="420"></canvas>
 
+<center>
+    <br></br>
+<button class="button" onclick="goHome()">
+    RETURN HOME 
+</button>
+
 <script src = "game.js" >
- 
+
 </script>
+<br></br>
  <audio controls> 
      
     <source src = "Chase.mp3" type="audio/mpeg">
 
 </audio>
+</center>
 </body>
 </html>

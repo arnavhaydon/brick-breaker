@@ -118,7 +118,7 @@ function draw(){
        else{
            lives = lives - 1
            if(lives <1){
-                alert("game over try again")
+                alert("Game over! Please try again")
                 document.location.reload()
                 clearInterval(interval)
            }
@@ -195,9 +195,8 @@ function collisionDetection(){
                 score = score + 1 
                 if(score === brickRowCount * brickColumnCount ){
 
-                    alert("you have won yay!!!!!! play again?")
-                    document.location.reload()
-                     clearInterval(interval)
+                    alert("Congratulations !!! You have won")
+                    window.location.href="index.html"
                 }
             }
         }
